@@ -30,6 +30,8 @@ body {
 }
 
 .draggable {
+  -webkit-transform: scale(0.8);
+          transform: scale(0.8);
   cursor: move;
 }
 
@@ -56,6 +58,7 @@ body {
   width: 600px;
   height: 800px;
   overflow-y: auto;
+  overflow-x: hidden;
 }
 
 .middle-panel {
@@ -96,5 +99,20 @@ body {
   width: 350px;
   z-index: 1;
   margin: 10px;
+}
+
+.side-panel::-webkit-scrollbar {
+  -webkit-appearance: none;
+          appearance: none;
+}
+
+.side-panel::-webkit-scrollbar-thumb {
+  background-color: #ff4d97;
+  border-radius: 50px;
+}
+
+.side-panel::-webkit-scrollbar-track {
+  border-radius: 50px;
+  background-color: rgba(0, 0, 0, 0.1);
 }
 /*# sourceMappingURL=style.css.map */

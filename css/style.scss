@@ -29,6 +29,7 @@ body {
 }
 
 .draggable {
+    transform: scale(.8);
     cursor: move;
 }
 
@@ -49,6 +50,7 @@ body {
     width: 600px;
     height: 800px;
     overflow-y: auto;
+    overflow-x: hidden;
 
 }
 
@@ -91,4 +93,23 @@ body {
     width: 350px;
     z-index: 1;
     margin: 10px;
+}
+
+// scrollbar section
+
+.side-panel {
+    &::-webkit-scrollbar {
+        appearance: none;
+    }
+
+    &::-webkit-scrollbar-thumb {
+        background-color: #ff4d97;
+        border-radius: 50px;
+        ;
+    }
+
+    &::-webkit-scrollbar-track {
+        border-radius: 50px;
+        background-color: rgba(0, 0, 0, .1);
+    }
 }
